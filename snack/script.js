@@ -18,7 +18,8 @@ arrDisney.forEach(disneyCharacter => {
     let disneyCharacterCapitalized = disneyCharacterLowerCase.charAt(0).toUpperCase() + disneyCharacterLowerCase.slice(1);
     //console.log(disneyCharacterCapitalized);
     arrDisneyUppercase.push(disneyCharacterCapitalized);
-})
+});
+
 console.log(arrDisneyUppercase);
 console.log(' ');
 
@@ -93,7 +94,7 @@ const arrAnimali = [
         famiglia: 'elapidi',
         classe: 'rettili'
     }
-]
+];
 
 console.table(arrAnimali);
 
@@ -103,7 +104,8 @@ arrAnimali.forEach(animale => {
     if (animale.classe == 'mammiferi' && !arrMammiferi.includes(animale)) {
         arrMammiferi.push(animale.nome)
     }    
-})
+});
+
 console.log(arrMammiferi);
 console.log(' ');
 
@@ -120,3 +122,70 @@ Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e 
 console.log('----------');
 console.log('SNACK 3');
 console.log(' ');
+
+arrPersone = [
+    {
+        nome: 'Guido',
+        cognome: 'La Vespa',
+        età: 48
+    },
+    {
+        nome: 'Bianca',
+        cognome: 'Neve',
+        età: 16
+    },
+    {
+        nome: 'Felice',
+        cognome: 'Squattrinato',
+        età: 25
+    },
+    {
+        nome: 'Diamante',
+        cognome: 'Grezzo',
+        età: 63
+    },
+    {
+        nome: 'Marina',
+        cognome: 'Militare',
+        età: 13
+    },
+    {
+        nome: 'Santa',
+        cognome: 'Pazienza',
+        età: 75
+    },
+    {
+        nome: 'Rino',
+        cognome: 'Ceronte',
+        età: 15
+    },
+    {
+        nome: 'Oscar',
+        cognome: 'Dabagno',
+        età: 27
+    },
+    {
+        nome: 'Franco',
+        cognome: 'Forte',
+        età: 50
+    },
+    {
+        nome: 'Dario',
+        cognome: 'Lampa',
+        età: 12
+    },
+];
+
+console.table(arrPersone);
+
+let arrChiPuoGuidare = [];
+
+arrPersone.forEach(persona => {
+    if (persona.età >= 18) {
+        arrChiPuoGuidare.push(`${persona.nome} ${persona.cognome} ha l'età per poter guidare`);
+    } else {
+        arrChiPuoGuidare.push(`${persona.nome} ${persona.cognome} non ha l'età per poter guidare`);
+    }
+});
+
+console.log(arrChiPuoGuidare);
