@@ -12,7 +12,7 @@ console.log(arrDisney);
 
 const arrDisneyUppercase = [];
 
-arrDisney.forEach((disneyCharacter) => {
+arrDisney.forEach(disneyCharacter => {
     let disneyCharacterLowerCase = disneyCharacter.toLowerCase();
     //console.log(disneyCharacterLowerCase);
     let disneyCharacterCapitalized = disneyCharacterLowerCase.charAt(0).toUpperCase() + disneyCharacterLowerCase.slice(1);
@@ -20,6 +20,7 @@ arrDisney.forEach((disneyCharacter) => {
     arrDisneyUppercase.push(disneyCharacterCapitalized);
 })
 console.log(arrDisneyUppercase);
+console.log(' ');
 
 
 
@@ -39,7 +40,72 @@ Crea un nuovo array con la lista dei mammiferi.
 */
 console.log('----------');
 console.log('SNACK 2');
-console.log('----------');
+console.log(' ');
+
+const arrAnimali = [
+    {
+        nome: 'leone',
+        famiglia: 'felidi',
+        classe: 'mammiferi'
+    },
+    {
+        nome: 'cane',
+        famiglia: 'canidi',
+        classe: 'mammiferi'
+    },
+    {
+        nome: 'gallina',
+        famiglia: 'fasianidi',
+        classe: 'uccelli'
+    },
+    {
+        nome: 'tartaruga',
+        famiglia: 'testudinidi',
+        classe: 'rettili'
+    },
+    {
+        nome: 'rana',
+        famiglia: 'ranidi',
+        classe: 'anfibi'
+    },
+    {
+        nome: 'delfino',
+        famiglia: 'delfinidi',
+        classe: 'mammiferi'
+    },
+    {
+        nome: 'colibrì',
+        famiglia: 'trochilidi',
+        classe: 'uccelli'
+    },
+    {
+        nome: 'trota',
+        famiglia: 'salmonidi',
+        classe: 'pesci'
+    },
+    {
+        nome: 'elefante',
+        famiglia: 'elefantidi',
+        classe: 'mammiferi'
+    },
+    {
+        nome: 'cobra',
+        famiglia: 'elapidi',
+        classe: 'rettili'
+    }
+]
+
+console.table(arrAnimali);
+
+let arrMammiferi = [];
+
+arrAnimali.forEach(animale => {
+    if (animale.classe == 'mammiferi' && !arrMammiferi.includes(animale)) {
+        arrMammiferi.push(animale.nome)
+    }    
+})
+console.log(arrMammiferi);
+console.log(' ');
 
 
 
@@ -53,4 +119,4 @@ Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e 
 */
 console.log('----------');
 console.log('SNACK 3');
-console.log('----------');
+console.log(' ');
