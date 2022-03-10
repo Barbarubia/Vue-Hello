@@ -4,10 +4,22 @@ A partire da un array di stringhe, crea un secondo array formattando le stringhe
 Es:
 ['pippo', 'PLUTO', 'Paperino'] => ['Pippo', 'Pluto', 'Paperino']
 */
-console.log('----------');
 console.log('SNACK 1');
-console.log('----------');
+console.log(' ');
 
+const arrDisney = ['pippo', 'PLUTO', 'Paperino', 'MINNIE', 'topolino', 'GasTone'];
+console.log(arrDisney);
+
+const arrDisneyUppercase = [];
+
+arrDisney.forEach((disneyCharacter) => {
+    let disneyCharacterLowerCase = disneyCharacter.toLowerCase();
+    //console.log(disneyCharacterLowerCase);
+    let disneyCharacterCapitalized = disneyCharacterLowerCase.charAt(0).toUpperCase() + disneyCharacterLowerCase.slice(1);
+    //console.log(disneyCharacterCapitalized);
+    arrDisneyUppercase.push(disneyCharacterCapitalized);
+})
+console.log(arrDisneyUppercase);
 
 
 
